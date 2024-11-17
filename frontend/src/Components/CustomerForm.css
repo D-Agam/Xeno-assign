@@ -1,0 +1,104 @@
+/* Background with a soft pastel gradient */
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(45deg, #9e4d98, #cc95d8, #8b56ac, #b06dad);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* Form and input styling remain the same */
+  
+  
+  /* Container to center the form */
+  .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Styling for the form */
+  form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    margin: 20px;
+  }
+  
+  /* Form heading */
+  h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  /* Input styling */
+  input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.3);
+  }
+  
+  /* Submit button styling */
+  button {
+    width: 100%;
+    padding: 14px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 600px) {
+    form {
+      padding: 20px;
+      margin: 10px;
+    }
+  
+    input,
+    button {
+      font-size: 14px;
+    }
+  }
+  
